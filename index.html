@@ -1,250 +1,749 @@
-<!DOCTYPE HTML>
-<!--
-	Horizons by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-    Gebruikt voor de website voor honing in Viersel Zandhoven.
--->
-<html>
-	<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140416256-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="nl"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Honing uit Viersel — Imker Daniel Boons, Viersel-Zandhoven</title>
+<meta name="description" content="Ambachtelijke, rauwe honing van imker Daniel Boons uit Viersel (Zandhoven). Lente-, bloemen-, zomer- en koolzaadhoning van Carnica-bijen. Geregistreerd bij het F.A.V.V.">
+<meta name="theme-color" content="#e8a30c">
 
-  gtag('config', 'UA-140416256-1');
+<!-- Favicon: honingraat -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e8a30c'/%3E%3Cpath d='M16 5 L26 10.5 L26 21.5 L16 27 L6 21.5 L6 10.5 Z' fill='none' stroke='%233a2c17' stroke-width='2.4'/%3E%3Cpath d='M16 11 L21 13.75 L21 19.25 L16 22 L11 19.25 L11 13.75 Z' fill='%233a2c17'/%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Honing uit Viersel — Imker Daniel Boons">
+<meta property="og:description" content="Ambachtelijke, rauwe honing uit Viersel-Zandhoven. Duurzaam geïmkerd met Carnica-bijen.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/drie-soorten.jpg">
+
+<!-- Structured data: lokale zaak -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Honing uit Viersel — Imker Daniel Boons",
+  "description": "Ambachtelijke, rauwe honing van Carnica-bijen. Geregistreerd imker bij het F.A.V.V.",
+  "telephone": "+32475578063",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Veerstraat 150",
+    "postalCode": "2240",
+    "addressLocality": "Viersel - Zandhoven",
+    "addressCountry": "BE"
+  },
+  "image": "images/drie-soorten.jpg"
+}
 </script>
-		<title>Honing_in_Viersel-imker_Boons_Daniel</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet" type="text/css">
-	<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-		</noscript>
-        
-	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-          <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 
-    <script>
+<style>
+  :root {
+    --honey:      #e8a30c;
+    --honey-lite: #f7c948;
+    --honey-deep: #b8770a;
+    --amber-dark: #6b4a12;
+    --brown:      #3a2c17;
+    --cream:      #fdf7ea;
+    --cream-2:    #f6ecd6;
+    --card:       #ffffff;
+    --line:       #e7d9b8;
+    --text:       #3a2c17;
+    --muted:      #7a6a4d;
+    --shadow:     0 6px 24px rgba(107, 74, 18, .12);
+    --shadow-lg:  0 18px 48px rgba(107, 74, 18, .18);
+    --display:    "Futura", "Century Gothic", "Avenir Next", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    --sans:       system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --wrap:       1120px;
+  }
 
-    // You can avoid the document.ready if you put the script at the bottom of the page
+  * { box-sizing: border-box; }
 
-    $(document).ready(function() {
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 
-      // Bind to the click of all links with a #hash in the href
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-      $('a[href^="#"]').click(function(e) {
+  img { max-width: 100%; display: block; }
+  a { color: var(--honey-deep); }
+  h1, h2, h3 { font-family: var(--display); line-height: 1.15; color: var(--brown); font-weight: 600; letter-spacing: -0.01em; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 
-        // Prevent the jump and the #hash from appearing on the address bar
+  /* ---------- Scroll-progress ---------- */
+  #progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: linear-gradient(90deg, var(--honey-lite), var(--honey), var(--honey-deep));
+    z-index: 60; transition: width .1s linear;
+  }
 
-        e.preventDefault();
+  /* ---------- Nav ---------- */
+  header.nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(253, 247, 234, .85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid transparent;
+    transition: box-shadow .25s, background .25s, border-color .25s;
+  }
+  header.nav.scrolled {
+    background: rgba(253, 247, 234, .95);
+    border-color: var(--line);
+    box-shadow: 0 4px 20px rgba(107,74,18,.08);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px; max-width: var(--wrap); margin: 0 auto; padding: 0 24px;
+    transition: height .25s;
+  }
+  header.nav.scrolled .nav-inner { height: 60px; }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--display); font-weight: 600; font-size: 1.1rem; letter-spacing: .03em;
+    color: var(--brown); text-decoration: none; white-space: nowrap;
+  }
+  .brand svg { width: 28px; height: 28px; flex: none; transition: transform .4s ease; }
+  .brand:hover svg { transform: rotate(30deg); }
+  .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    position: relative; text-decoration: none; color: var(--brown); font-weight: 500; font-size: .98rem;
+    padding: 6px 2px; transition: color .15s;
+  }
+  .nav-links a::after {
+    content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 0;
+    background: var(--honey); border-radius: 2px; transition: width .22s ease;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--honey-deep); }
+  .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+  .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; color: var(--brown); }
+  .nav-toggle svg { width: 28px; height: 28px; }
 
-        // Scroll the window, stop any previous animation, stop on user manual scroll
+  @media (max-width: 720px) {
+    .nav-toggle { display: block; }
+    .nav-links {
+      position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; gap: 0;
+      background: var(--cream);
+      border-bottom: 1px solid var(--line);
+      max-height: 0; overflow: hidden; transition: max-height .28s ease;
+    }
+    .nav-links.open { max-height: 300px; }
+    .nav-links li { border-top: 1px solid var(--line); }
+    .nav-links a { display: block; padding: 15px 24px; }
+    .nav-links a::after { display: none; }
+  }
 
-        // Check https://github.com/flesler/jquery.scrollTo for more customizability
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(circle at 18% 22%, rgba(255,255,255,.4), transparent 46%),
+      radial-gradient(circle at 88% 80%, rgba(201,132,10,.35), transparent 42%),
+      linear-gradient(135deg, #f9d15a 0%, #e8a30c 55%, #c9840a 100%);
+    color: #3a2c17;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; opacity: .16;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cg fill='none' stroke='%236b4a12' stroke-width='2'%3E%3Cpath d='M28 0 L56 16 L56 50 L28 66 L0 50 L0 16 Z'/%3E%3Cpath d='M28 66 L56 82 L56 116 L28 132 L0 116 L0 82 Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 56px 100px;
+  }
+  /* drijvende hexagonen */
+  .hero-deco { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .hex {
+    position: absolute; color: rgba(58,44,23,.16);
+    animation: float 12s ease-in-out infinite alternate;
+  }
+  .hex svg { display: block; width: 100%; height: 100%; }
+  .hex.h1 { width: 120px; height: 120px; top: 12%;  left: 6%;  animation-duration: 13s; }
+  .hex.h2 { width: 70px;  height: 70px;  top: 62%;  left: 14%; animation-duration: 10s; animation-delay: -3s; color: rgba(255,255,255,.22); }
+  .hex.h3 { width: 160px; height: 160px; top: 18%;  right: 8%; animation-duration: 15s; animation-delay: -5s; }
+  .hex.h4 { width: 54px;  height: 54px;  top: 70%;  right: 20%; animation-duration: 11s; animation-delay: -2s; color: rgba(255,255,255,.2); }
+  .hex.h5 { width: 40px;  height: 40px;  top: 40%;  right: 40%; animation-duration: 9s;  animation-delay: -6s; }
+  @keyframes float {
+    from { transform: translateY(-12px) rotate(-6deg); }
+    to   { transform: translateY(14px)  rotate(6deg); }
+  }
 
-        $(window).stop(true).scrollTo(this.hash, {duration:1000, interrupt:true});
+  .hero-inner {
+    position: relative; z-index: 2; max-width: var(--wrap); margin: 0 auto;
+    padding: 96px 24px 104px;
+  }
+  .hero .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(58,44,23,.1); color: var(--amber-dark);
+    font-size: .82rem; font-weight: 600; letter-spacing: .8px; text-transform: uppercase;
+    padding: 7px 15px; border-radius: 999px; margin-bottom: 20px;
+  }
+  .hero .eyebrow svg { width: 15px; height: 15px; }
+  .hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0 0 6px; }
+  .hero .tag { font-size: 1.05rem; font-weight: 600; color: var(--amber-dark); letter-spacing: .5px; text-transform: uppercase; margin: 0 0 22px; }
+  .hero p { max-width: 720px; font-size: 1.1rem; margin: 0 0 16px; }
+  .hero .fav { font-weight: 600; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600;
+    padding: 14px 28px; border-radius: 999px;
+    transition: transform .15s, box-shadow .15s, background .15s;
+  }
+  .btn-primary { background: var(--brown); color: #fff; box-shadow: var(--shadow); }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .btn-ghost { background: rgba(255,255,255,.75); color: var(--brown); border: 1px solid rgba(107,74,18,.25); }
+  .btn-ghost:hover { background: #fff; transform: translateY(-3px); }
 
+  /* ---------- Trust / feature strip ---------- */
+  .features-wrap { position: relative; z-index: 5; }
+  .features {
+    margin-top: -48px; background: var(--card); border: 1px solid var(--line);
+    border-radius: 18px; box-shadow: var(--shadow-lg);
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+  }
+  .feature {
+    display: flex; align-items: center; gap: 14px; padding: 22px 24px;
+    border-right: 1px solid var(--line);
+  }
+  .feature:last-child { border-right: 0; }
+  .feature .fic {
+    flex: none; width: 44px; height: 44px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--honey-lite), var(--honey));
+    display: grid; place-items: center; color: var(--brown);
+  }
+  .feature .fic svg { width: 24px; height: 24px; }
+  .feature .ft { font-family: var(--display); font-weight: 600; font-size: .98rem; line-height: 1.25; }
+  .feature .fs { font-size: .82rem; color: var(--muted); }
+  @media (max-width: 860px) {
+    .features { grid-template-columns: repeat(2, 1fr); }
+    .feature:nth-child(2) { border-right: 0; }
+    .feature:nth-child(1), .feature:nth-child(2) { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 480px) {
+    .features { grid-template-columns: 1fr; margin-top: -32px; }
+    .feature { border-right: 0; border-bottom: 1px solid var(--line); }
+    .feature:last-child { border-bottom: 0; }
+  }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: 84px 0; }
+  section.block.alt { background: var(--cream-2); }
+  .sec-head { text-align: center; margin-bottom: 50px; }
+  .sec-head .eyebrow {
+    display: inline-grid; place-items: center; width: 40px; height: 40px; margin-bottom: 12px;
+    color: var(--honey);
+  }
+  .sec-head .eyebrow svg { width: 32px; height: 32px; }
+  .sec-head h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); margin: 0 0 6px; }
+  .sec-head .byline { color: var(--muted); font-style: italic; }
+  .sec-head::after {
+    content: ""; display: block; width: 64px; height: 3px; margin: 18px auto 0;
+    background: linear-gradient(90deg, var(--honey-lite), var(--honey-deep)); border-radius: 3px;
+  }
+
+  /* photo cards */
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+    transition: transform .28s ease, box-shadow .28s ease;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+  .card .ph { background: var(--cream-2); aspect-ratio: 4/3; overflow: hidden; }
+  .card .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+  .card:hover .ph img { transform: scale(1.06); }
+  .card .body { padding: 22px; }
+  .card .body p { margin: 0; color: var(--text); }
+  @media (max-width: 860px) { .grid-3 { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+
+  /* zoombaar */
+  .zoom { cursor: zoom-in; }
+
+  /* product rows */
+  .product {
+    position: relative;
+    display: grid; grid-template-columns: 300px 1fr; gap: 36px; align-items: center;
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 30px; box-shadow: var(--shadow); margin-bottom: 28px;
+    transition: transform .28s ease, box-shadow .28s ease;
+  }
+  .product:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .product .jars { display: flex; gap: 12px; justify-content: center; align-items: flex-end; flex-wrap: wrap; }
+  .product .jars img { height: 150px; width: auto; max-width: 100%; border-radius: 8px; filter: drop-shadow(0 8px 14px rgba(107,74,18,.18)); transition: transform .3s ease; }
+  .product .jars img:hover { transform: translateY(-4px) scale(1.03); }
+  .product h3 { font-size: 1.55rem; margin: 0 0 12px; }
+  .product p { margin: 0; }
+  @media (max-width: 720px) {
+    .product { grid-template-columns: 1fr; gap: 20px; }
+    .product .jars img { height: 130px; }
+  }
+
+  /* price + info panels */
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px; }
+  @media (max-width: 860px) { .panels { grid-template-columns: 1fr; } }
+  .panel {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 28px 30px; box-shadow: var(--shadow);
+  }
+  .panel h3 { margin: 0 0 16px; font-size: 1.35rem; }
+  .price-list { list-style: none; margin: 0; padding: 0; }
+  .price-list li {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    padding: 12px 0; border-bottom: 1px dashed var(--line);
+  }
+  .price-list li:last-child { border-bottom: 0; }
+  .price-list .amt {
+    font-family: var(--display); font-weight: 700; color: var(--honey-deep); white-space: nowrap;
+    background: var(--cream); padding: 4px 12px; border-radius: 999px; font-size: .95rem;
+  }
+  .panel .note { margin: 16px 0 0; font-size: .93rem; color: var(--muted); }
+
+  .stock {
+    border: 1px solid #efd89a; border-left: 5px solid var(--honey);
+    background: linear-gradient(180deg, #fffdf6, #fdf3dd);
+  }
+  .stock .badge {
+    display: inline-flex; align-items: center; gap: 7px; background: var(--honey); color: #402d09;
+    font-family: var(--display); font-weight: 700; font-size: .78rem; letter-spacing: .5px; text-transform: uppercase;
+    padding: 5px 13px; border-radius: 999px; margin-bottom: 12px;
+  }
+  .stock .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #2e7d32; box-shadow: 0 0 0 0 rgba(46,125,50,.5); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(46,125,50,.5)} 70%{box-shadow:0 0 0 8px rgba(46,125,50,0)} 100%{box-shadow:0 0 0 0 rgba(46,125,50,0)} }
+  .stock .updated { font-size: .88rem; color: var(--muted); margin-top: 14px; }
+
+  /* info two-col */
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 860px) { .info-grid { grid-template-columns: 1fr; } }
+  .info-card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    box-shadow: var(--shadow); overflow: hidden;
+    transition: transform .28s ease, box-shadow .28s ease;
+  }
+  .info-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+  .info-card .ph { aspect-ratio: 16/9; background: var(--cream-2); overflow: hidden; }
+  .info-card .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+  .info-card:hover .ph img { transform: scale(1.05); }
+  .info-card .body { padding: 28px 30px; }
+  .info-card h3 { margin: 0 0 12px; font-size: 1.35rem; }
+  .info-card p { margin: 0 0 12px; }
+
+  /* ---------- Contact / footer ---------- */
+  footer.site {
+    position: relative; background: var(--brown); color: #f3e8cf; padding: 76px 0 30px;
+  }
+  footer.site::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 10px;
+    background: linear-gradient(90deg, var(--honey-lite), var(--honey), var(--honey-deep));
+  }
+  footer.site h2, footer.site h3 { color: #fff; }
+  footer.site a { color: #f4c141; }
+  .foot-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 44px; }
+  @media (max-width: 860px) { .foot-grid { grid-template-columns: 1fr; gap: 34px; } }
+  .foot-grid h2 { font-size: 1.6rem; margin: 0 0 14px; }
+  .foot-grid p { margin: 0 0 10px; color: #e8dcc0; }
+  .contact-list { list-style: none; margin: 18px 0 0; padding: 0; }
+  .contact-list li { display: flex; gap: 12px; margin-bottom: 10px; align-items: flex-start; }
+  .contact-list .ic { color: var(--honey); flex: none; margin-top: 3px; }
+  .contact-list .ic svg { width: 20px; height: 20px; }
+  .map-embed { border: 0; width: 100%; height: 300px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+  .map-btn { display: inline-block; margin-top: 14px; }
+  .copyright {
+    margin-top: 46px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.15);
+    font-size: .86rem; color: #c8b78d; text-align: center;
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .stagger > * { opacity: 0; transform: translateY(26px); transition: opacity .6s ease, transform .6s ease; }
+  .stagger.in > * { opacity: 1; transform: none; }
+  .stagger.in > *:nth-child(2) { transition-delay: .12s; }
+  .stagger.in > *:nth-child(3) { transition-delay: .24s; }
+  .stagger.in > *:nth-child(4) { transition-delay: .36s; }
+
+  /* ---------- Lightbox ---------- */
+  .lb {
+    position: fixed; inset: 0; z-index: 100; display: none;
+    background: rgba(30,20,10,.9); align-items: center; justify-content: center; padding: 30px;
+    opacity: 0; transition: opacity .25s ease;
+  }
+  .lb.open { display: flex; opacity: 1; }
+  .lb img { max-width: 92vw; max-height: 82vh; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+  .lb .cap { position: absolute; bottom: 22px; left: 0; right: 0; text-align: center; color: #f3e8cf; font-size: .95rem; }
+  .lb .close { position: absolute; top: 18px; right: 24px; background: none; border: 0; color: #fff; font-size: 2.2rem; line-height: 1; cursor: pointer; }
+
+  .skip { position: absolute; left: -999px; top: 0; background: #fff; padding: 8px 14px; z-index: 100; }
+  .skip:focus { left: 8px; top: 8px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; }
+    .reveal, .stagger > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .hex, .stock .badge .dot { animation: none !important; }
+  }
+</style>
+</head>
+
+<body>
+<div id="progress" style="width: 0%;"></div>
+<a class="skip" href="#assortiment">Ga naar het assortiment</a>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Honing uit Viersel — startpagina">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#e8a30c" stroke-width="1.8" aria-hidden="true">
+        <path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"></path>
+        <path d="M12 6 L17 9 L17 15 L12 18 L7 15 L7 9 Z" stroke="#b8770a"></path>
+      </svg>
+      Honing uit Viersel
+    </a>
+    <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false" id="navToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line>
+      </svg>
+    </button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#honingbij" class="active">De honingbij</a></li>
+        <li><a href="#assortiment" class="">Assortiment</a></li>
+        <li><a href="#natuur" class="">Help de bijen</a></li>
+        <li><a href="#contact" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-deco" aria-hidden="true">
+    <span class="hex h1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L22 6.5 L22 17.5 L12 23 L2 17.5 L2 6.5 Z"></path></svg></span>
+    <span class="hex h2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L22 6.5 L22 17.5 L12 23 L2 17.5 L2 6.5 Z"></path></svg></span>
+    <span class="hex h3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1 L22 6.5 L22 17.5 L12 23 L2 17.5 L2 6.5 Z"></path></svg></span>
+    <span class="hex h4"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L22 6.5 L22 17.5 L12 23 L2 17.5 L2 6.5 Z"></path></svg></span>
+    <span class="hex h5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L22 6.5 L22 17.5 L12 23 L2 17.5 L2 6.5 Z"></path></svg></span>
+  </div>
+  <div class="hero-inner reveal in">
+    <span class="eyebrow">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L20 6.5 L20 16 L12 22 L4 16 L4 6.5 Z"></path></svg>
+      Ambachtelijke honing uit eigen imkerij
+    </span>
+    <h1>Welkom!</h1>
+    <p class="tag">Imker Daniel Boons · Viersel – Zandhoven</p>
+    <p>Vanuit een interesse voor de natuur en al wat zoemt, is de 
+belangstelling voor bijen gegroeid. Na ettelijke cursussen, een gedegen 
+begeleiding door een ervaren imker en de goede raad van de leden van de 
+Zandhovense imkervereniging is er een eigen hobby-imkerij ontstaan. We 
+imkeren met Carnica-bijen op Kempische kasten.</p>
+    <p class="fav">Geregistreerde imker bij het F.A.V.V. en lid van de imkervereniging van Zandhoven: “De bij hoort erbij”.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#assortiment">Bekijk het assortiment</a>
+      <a class="btn btn-ghost" href="#contact">Verkoop &amp; contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="features-wrap">
+  <div class="wrap">
+    <div class="features reveal in">
+      <div class="feature">
+        <span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 2 L20 5 V11 C20 16 16.5 19.5 12 21 C7.5 19.5 4 16 4 11 V5 Z"></path><path d="M9 12 l2 2 l4-4"></path></svg></span>
+        <div><div class="ft">F.A.V.V.-geregistreerd</div><div class="fs">Officieel erkende imker</div></div>
+      </div>
+      <div class="feature">
+        <span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><ellipse cx="12" cy="13" rx="5" ry="7"></ellipse><path d="M7 10h10M7 16h10"></path><path d="M12 6 V3 M9 4 l3 2 3-2"></path></svg></span>
+        <div><div class="ft">Carnica-bijen</div><div class="fs">Op Kempische kasten</div></div>
+      </div>
+      <div class="feature">
+        <span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="10" r="7"></circle><path d="M12 6v4l2.5 2.5"></path></svg></span>
+        <div><div class="ft">Nectar binnen 3 km</div><div class="fs">Lokaal &amp; seizoensgebonden</div></div>
+      </div>
+      <div class="feature">
+        <span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M8 3h8l-1 5a4 4 0 0 1-6 0z"></path><path d="M12 8v6"></path><path d="M8.5 21h7l-1-4h-5z"></path></svg></span>
+        <div><div class="ft">Koud geslingerd</div><div class="fs">Rauw &amp; onbehandeld</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DE HONINGBIJ ===== -->
+<section class="block" id="honingbij">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L20 6.5 L20 16 L12 22 L4 16 L4 6.5 Z"></path></svg></span>
+      <h2>De honingbij — <em>Apis mellifera</em></h2>
+      <span class="byline">enkele foto's</span>
+    </div>
+    <div class="grid-3 stagger in">
+      <article class="card">
+        <div class="ph"><img class="zoom" src="assets/bijenbaard_tR7n.jpg" alt="Bijen op de vliegplank van de bijenkast" data-caption="Bijen op de vliegplank" loading="lazy"></div>
+        <div class="body">
+          <p>De bijen op de vliegplank, het is te warm in de kast. Ons 
+uitgangspunt is duurzaam te imkeren; dit wil zeggen: prioritair is het 
+respect voor bijen en natuur. We richten ons dan ook op de biologische 
+productiemethodes vermeld in EEG-Verordening 889/2008 voor bioproducten.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img class="zoom" src="assets/koolzaadveld_tR7n.jpg" alt="Imkers bij een bloeiend koolzaadveld" data-caption="Koolzaadveld in Wallonië" loading="lazy"></div>
+        <div class="body">
+          <p>Enkele bijenkasten verhuizen in de lente ook naar 
+koolzaadvelden, gelegen in Wallonië (achter Charleroi). De bijen maken 
+witte, vaste koolzaadhoning uit de koolzaadnectar.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img class="zoom" src="assets/drie-soorten_tR7n.jpg" alt="Drie potjes honing: zomerhoning, bloemenhoning en koolzaadhoning" data-caption="Zomerhoning, bloemenhoning en koolzaadhoning" loading="lazy"></div>
+        <div class="body">
+          <p>Onze honing is een puur natuurlijk product, ambachtelijk 
+geoogst (onmiddellijk koud geslingerd) en onbehandeld (rauwe honing). 
+Het eindproduct is dan ook smaakvolle honing. De activiteit van de bijen
+ en het nectar-/stuifmeelaanbod zijn o.a. sterk afhankelijk van het 
+weer, waardoor onze honing van jaar tot jaar van smaak en textuur 
+verschilt.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ASSORTIMENT ===== -->
+<section class="block alt" id="assortiment">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L20 6.5 L20 16 L12 22 L4 16 L4 6.5 Z"></path></svg></span>
+      <h2>Welke producten bieden we aan?</h2>
+      <span class="byline">overzicht honing</span>
+    </div>
+
+    <article class="product reveal in">
+      <div class="jars">
+        <img class="zoom" src="assets/potje-zomerhoning_tR7n.jpg" alt="Glazen bokaal zomerhoning 500 gram" data-caption="Zomerhoning 500 g" loading="lazy">
+        <img class="zoom" src="assets/zomerhoning-250_tR7n.jpg" alt="Honing 250 gram" data-caption="Honing 250 g" loading="lazy">
+        <img class="zoom" src="assets/zomerhoning-knijp_tR7n.jpg" alt="Zomerhoning in knijpfles" data-caption="Bloemenhoning knijpfles" loading="lazy">
+      </div>
+      <div>
+        <h3>Lente-, bloemen- en zomerhoning</h3>
+        <p>Om deze honingsoorten te oogsten blijven de bijenkasten hier 
+thuis in Viersel staan en halen de bijen de nectar uit de bloemen in een
+ straal van ongeveer 3 km. De lentehoning wordt in de tweede helft van 
+mei geoogst. Deze honing bevat heel wat nectar uit 
+paardenkastanjebloesem en paardenbloem en is een vrij vaste maar nog 
+vlot smeerbare honing. Afhankelijk van de weersomstandigheden kan er 
+begin juni ook geslingerd worden; die noemen we gewoon bloemenhoning. 
+Deze bevat veel honing uit de talrijke acaciabomen in de omgeving en is 
+daardoor een vloeibare honing die slechts zeer langzaam zal 
+kristalliseren. Rond midden juli wordt de zomerhoning geslingerd; die 
+bevat o.a. de lindebloesems. Deze honing bieden we aan in crèmevorm. De 
+standaardverpakking voor alle types honing is een glazen bokaaltje van 
+500 gram; de vloeibare bloemenhoning is eveneens te verkrijgen in een 
+kunststof knijpfles van 250 gram.</p>
+      </div>
+    </article>
+
+    <article class="product reveal in">
+      <div class="jars">
+        <img class="zoom" src="assets/potje-koolzaad_tR7n.jpg" alt="Glazen bokaal koolzaadhoning 500 gram" data-caption="Koolzaadhoning 500 g" loading="lazy">
+      </div>
+      <div>
+        <h3>Koolzaadhoning</h3>
+        <p>Koolzaadhoning is een vaste, witte honingsoort met een 
+zachte, zeer specifieke smaak en wordt einde mei geslingerd. De 
+koolzaadvelden waarop de bijen staan liggen in de Ardennen, achter 
+Charleroi. Gedurende een 4-tal weken krijgen de bijen de verscheidene 
+hectaren koolzaadvelden als nectar- en stuifmeelbron aangeboden. Deze 
+honing bewaart u het best op kamertemperatuur. Koolzaadhoning bieden we 
+aan in glazen bokaaltjes van 500 gram.</p>
+      </div>
+    </article>
+
+    <div class="panels">
+      <div class="panel reveal in">
+        <h3>Verkoop &amp; prijzen</h3>
+        <ul class="price-list">
+          <li><span>Honing — glazen bokaal 500 g</span><span class="amt">8,0 €</span></li>
+          <li><span>Bloemenhoning — knijpfles 250 g</span><span class="amt">4,5 €</span></li>
+          <li><span>Bijenwas (bv. voor kaarsen)</span><span class="amt">15 € / kg</span></li>
+          <li><span>Ruwe propolis</span><span class="amt">2,0 € / g</span></li>
+        </ul>
+        <p class="note">Raathoning per raampje is op aanvraag en enkel 
+tijdens de oogstperiode beschikbaar (lente = midden mei; zomer = midden 
+juli). Koninginnenbrij en stuifmeel worden niet geoogst. Betaling via 
+bank-app is mogelijk.</p>
+      </div>
+
+      <div class="panel stock reveal in">
+        <span class="badge"><span class="dot"></span> Voorradig</span>
+        <p>De lentehoning is uitverkocht. Koolzaadhoning is nog 
+beschikbaar. Er gaat ook géén bloemenhoning in juni geslingerd worden — 
+tijdens de bloei van de acacia is het te slecht weer geweest. De 
+zomerhoning is voor midden augustus. Bijenwas is eveneens uitverkocht; 
+er is terug een 2-tal kg beschikbaar tegen september 2026. Vijf gram 
+ruwe propolis is er nog.</p>
+        <p class="updated">Laatste update: 14 juni 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NATUUR / DIENSTEN ===== -->
+<section class="block" id="natuur">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L20 6.5 L20 16 L12 22 L4 16 L4 6.5 Z"></path></svg></span>
+      <h2>Help de bijen &amp; andere diensten</h2>
+      <span class="byline">samen voor meer bloemen</span>
+    </div>
+    <div class="info-grid stagger in">
+      <article class="info-card">
+        <div class="ph"><img class="zoom" src="assets/thumb-koolzaadveld_tR7n.jpg" alt="Bloeiend koolzaadveld" data-caption="Bloeiend koolzaadveld" loading="lazy"></div>
+        <div class="body">
+          <h3>Help bijen, hommels en vlinders</h3>
+          <p>De bijen, hommels en vlinders hebben het moeilijk. Naast 
+druk door parasieten en pesticiden is het sterk beperkte en verschraalde
+ aanbod van stuifmeel en nectar een oorzaak. Help door een groter en 
+diverser aanbod van bloemen en bloeiende bomen te planten. Op 
+verscheidene <a href="http://users.telenet.be/imkerbondzoersel/bijenplanten.html" target="_blank" rel="noopener">websites</a> kan u planten selecteren met een hoog <a href="http://www.imkerpedia.nl/wiki/index.php/Nectar" target="_blank" rel="noopener">nectar-</a> of <a href="https://nl.wikipedia.org/wiki/Stuifmeel" target="_blank" rel="noopener">stuifmeelaanbod</a>.</p>
+          <p>Iedereen kan van zijn tuin een restaurant maken — niet 
+enkel de honingbij, maar ook de wilde bijen, alle soorten hommels en 
+vlinders zullen er gelukkig mee zijn. Elk beetje helpt. Laat dus die 
+klaver staan in je gazon, of maak er beter een bloemenweide van! Puur 
+genieten!</p>
+        </div>
+      </article>
+      <article class="info-card">
+        <div class="ph"><img class="zoom" src="assets/bijenbaard_tR7n.jpg" alt="Bijenbaard op de bijenkast" data-caption="Een bijenbaard op de kast" loading="lazy"></div>
+        <div class="body">
+          <h3>Andere diensten: drachtlocatie, zwermen …</h3>
+          <p>Wenst u een bijenkast in uw buurt, heeft u een 
+drachtgebied, een bijenzwerm gezien … of wil je gewoon even onze bijen 
+bezoeken? Neem dan a.u.b. contact met ons op.</p>
+          <p>Of wenst u de honing in een andere verpakking (potjes van 250, 125, 50 of 30 g …)? Contacteer ons. <em>Noot: dit is enkel mogelijk vóór de honing wordt geslingerd, dus tijdig contacteren.</em></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / FOOTER ===== -->
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="reveal in">
+        <h2>Openingsuren bij verkoop thuis</h2>
+        <p>Die hebben we helaas niet. Met pensioen zijn we meestal wel thuis — of net niet. U mag altijd aanbellen.</p>
+        <p>Maar het best: stuur eerst een SMS of bel even naar <a href="tel:+32475578063">0475 57 80 63</a>.</p>
+        <p>Of stuur een mailtje naar <strong>voornaam.familienaam@telenet.be</strong> (daniel.boons). Dan spreken we een moment af.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+            <span>Veerstraat 150<br>2240 Viersel – Zandhoven</span>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></span>
+            <span><a href="tel:+32475578063">0475 57 80 63</a></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal in">
+        <h3>Waar te bereiken</h3>
+        <iframe class="map-embed" title="Kaart: Veerstraat 150, 2240 Viersel" src="https://www.google.com/maps?q=Veerstraat%20150,%202240%20Viersel,%20Belgi%C3%AB&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="btn btn-primary map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Veerstraat+150,+2240+Viersel,+Belgi%C3%AB" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Website &amp; foto's: D. Boons &amp; H. Wuyts
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto vergroot">
+  <button class="close" id="lbClose" aria-label="Sluiten">×</button>
+  <img id="lbImg" src="" alt="">
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+  // ---- Mobiel menu ----
+  var toggle = document.getElementById('navToggle');
+  var links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // ---- Nav shrink + scroll-progress ----
+  var nav = document.getElementById('siteNav');
+  var bar = document.getElementById('progress');
+  function onScroll() {
+    var y = window.scrollY || document.documentElement.scrollTop;
+    nav.classList.toggle('scrolled', y > 8);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ---- Reveal on scroll ----
+  var revs = document.querySelectorAll('.reveal, .stagger');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
       });
+    }, { threshold: 0.14 });
+    revs.forEach(function (el) { io.observe(el); });
+  } else {
+    revs.forEach(function (el) { el.classList.add('in'); });
+  }
 
+  // ---- Scroll-spy (actieve navlink) ----
+  var sections = ['honingbij', 'assortiment', 'natuur', 'contact'].map(function (id) { return document.getElementById(id); });
+  var navMap = {};
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    navMap[a.getAttribute('href').slice(1)] = a;
+  });
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          Object.values(navMap).forEach(function (a) { a.classList.remove('active'); });
+          if (navMap[en.target.id]) navMap[en.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { if (s) spy.observe(s); });
+  }
+
+  // ---- Lightbox ----
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCap = document.getElementById('lbCap');
+  function openLb(src, alt, cap) {
+    lbImg.src = src; lbImg.alt = alt || ''; lbCap.textContent = cap || '';
+    lb.classList.add('open');
+  }
+  function closeLb() { lb.classList.remove('open'); lbImg.src = ''; }
+  document.querySelectorAll('img.zoom').forEach(function (img) {
+    img.addEventListener('click', function () {
+      openLb(img.getAttribute('src'), img.getAttribute('alt'), img.getAttribute('data-caption'));
     });
-
-    </script>
-	</head>
-	<body class="homepage">
-		<!-- Header -->
-			<div id="header">
-            	<div class="container">
-						
-					<!-- Logo -->
-						<h1><a href="#" id="logo">Imker Daniel Boons in Viersel - Zandhoven</a></h1>
-					
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li>
-									<a href="">Website menu</a>
-									<ul>
-										<li><a href="#honingbij">de honingbij</a></li>
-										<li><a href="#assortiment">assortiment honing </a></li>
-										<li><a href="#contact">contact gegevens</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
+  });
+  document.getElementById('lbClose').addEventListener('click', closeLb);
+  lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+</script>
 
 
-					<!-- Banner -->
-						<div id="banner">
-							<div class="container">
-								<section>
-									<header class="major">                                    
-										<h2>Welkom  !!!</h2>
-										<span class="byline">Vanuit een interesse voor de natuur en al wat zoemt, is de belangstelling voor bijen gegroeid. Na ettelijke cursussen, een gedegen begeleiding door een ervaren imker en de goede raad van de leden van de Zandhovense imkervereniging is er een eigen hobby imkerij ontstaan. We imkeren met Carnica bijen op Kempische kasten.
-                                       <br /><br />Geregistreerde imker bij het F.A.V.V. en lid van de imkervereniging van Zandhoven:” De bij hoort erbij”.
-                                       <br /> Voor verkoop en contact gegevens: scroll naar beneden - onderaan de pagina. 
-                                       </span>
-									</header>
-									
-								</section>			
-							</div>
-						</div>
-				</div>
-			</div>
-
-		<!-- Featured -->
-			<div class="wrapper style2">
-				<section class="container">
-					<header class="major">
-						<h2>De <a id="honingbij"></a>honingbij Apis Mellifera</h2>
-						<span class="byline">enkele foto's</span>
-					</header>
-					<div class="row no-collapse-1">
-						<section class="4u">
-							<a href="#" class="image feature"><img src="images/bijenbaard.jpg" alt="bijen op vliegplank" width="340" height="250"></a>
-						  <p>De bijen op de vliegplank,het is te warm in de kast. Ons uitgangspunt is duurzaam te imkeren dit wil zeggen prioritair is het respect voor bijen en natuur. We richten ons dan ook op de biologische productiemethodes vermeld in EEG Verordening 889/2008 voor bio producten.</p>
-                          
-						</section>
-						<section class="4u">
-							<a href="#" class="image feature"><img src="images/imkers in koolzaadveld.jpg" alt="imkers in koolzaad" width="340" height="250"></a>
-							<p> Enkele bijenkasten verhuizen in de lente ook naar koolzaadvelden, gelegen in Wallonië (achter Charlerloi). De bijen maken witte, vaste koolzaadhoning uit de koolzaadnectar. </p>
-                            <p><a href="#logo"> naar boven</a></p>
-						</section>
-					  <section class="4u">
-							<a href="#" class="image feature"><img src="images/3soorten.jpg" alt="" width="340" height="250"></a>
-							<p> Onze honing is een puur natuurlijk product, ambachtelijk geoogst (onmiddellijk koud geslingerd) en onbehandeld (rauwe honing). Het eindprodukt is dan ook smaakvolle honing. De activiteit van de bijen en het nectar- /stuifmeel-aanbod zijn o.a. sterk afhankelijk van het weer waardoor ook onze honing van jaar tot jaar van smaak en textuur verschilt. </p>
-						</section>
-						
-					</div>
-				</section>
-			</div>
-
-		<!-- Main -->
-			<div id="main" class="wrapper style1">
-				<section class="container">
-					<header class="major">
-						<h2>Welke <a id="assortiment"></a>produkten  bieden we aan?</h2>
-						<span class="byline">overzicht honing</span>
-					</header>
-					<div class="row">
-					
-						<!-- Content -->
-							<div class="6u">
-								<section>
-									<ul class="style">
-										<li>
-                                        <a href="images/potjezomerhoning2groot.jpg" data-lightbox="producten" data-title="zomerhoning 500 gram"><img src="images/potje zomerhoning 2.jpg" alt="zomerhoning" name="thumbs" width="77" height="102" id="thumbs"> </a>
-                                        <a href="images/zomerhoning 250 gr groot.jpg" data-lightbox="producten" data-title="honing 250 gram"><img src="images/zomerhoning 250 gr klein.jpg" alt="zomerhoning 250 gr" name="thumbs" width="60" height="102" id="thumbs"> </a>
-                                        <a href="images/zomerhoning knijp groot.jpg" data-lightbox="producten" data-title="zomerhoning knijpfles"><img src="images/zomerhoning knijp klein.jpg" alt="zomerhoning knijpfles" name="thumbs" width="60" height="102" id="thumbs"></a>											 
-											<h3>Lente-, bloemen- en zomerhoning</h3>
-										<span> Om deze honingsoorten te oogsten blijven de bijenkasten hier thuis in Viersel staan en halen de bijen de nectar uit de bloemen in een straal van ongeveer 3 km. De lentehoning wordt in de tweede helft van mei geoogst. Deze honing bevat heel wat nectar uit paardenkastanjebloesem en paardenbloem en is een vrij vaste maar nog vlot smeerbare honing. Afhankelijk van de weersomstandigheden kan er begin juni ook geslingerd worden en noemen we gewoon bloemenhoning. Deze bevat veel honing uit de talrijke accaciabomen in de omgeving en is deze daardoor een vloeibare honing die slechts zeer langzaam zal kristalliseren. Rond midden juli wordt de zomerhoning geslingerd en bevat o.a. de lindebloesems. Deze honing bieden we aan in creme -vorm. De standaard verpakkingen voor alle type honingen zijn glazen bokaaltjes van 500 gram, de vloeibare bloemenhoning is eveneens te verkrijgen in  een kunststof knijpfles van 250 gram. </span></li>
-										<li>
-                                        <a href="images/potje koolzaad groot.jpg" data-lightbox="producten" data-title=" koolzaad"><img src="images/potje koolzaad.jpg" alt="koolzaadhoning" name="thumbs" width="77" height="102" id="thumbs"></a>	
-											<h3>Koolzaadhoning </h3>
-										<span> Koolzaadhoning is een vaste, witte honingsoort met een zachte, zeer specifieke smaak en wordt einde mei geslingerd. De koolzaadvelden waarop de bijen staan liggen in de Ardennen, achter Charlerloi. Gedurende een 4-tal weken krijgen de bijen de verscheidene hectaren koolzaadvelden als nectar- en stuifmeelbron aangeboden. Deze honing kan u best bewaren op kamertemperatuur. Koolzaadhoning bieden we aan in de glazen bokaaltjes van 500 gram. </span></li>
-										<br>
-										<h3>Verkoop:</h3>
-                                        Honing in de glazen bokalen van 500gr kost 8,0 €, de 250 gram knijpfles is aan 4,5 €. <br> 
-                                        Bijenwas (bvb. voor kaarsen) is beschikbaar aan 15 € per kg. Ruwe propolis aan 2,0 € de gram.
-                                        Raathoning per raampje is op aanvraag en enkel tijdens de periode van oogsten (lente = midden mei ; zomer = midden juli) beschikbaar.
-                                        Koninginnenbrij en stuifmeel worden niet geoogst. 
-                                        Betaling via bank-app is mogelijk.
-                                        <br><h3>Voorradig:</h3>
-                                        De lentehoning is uitverkocht. Koolzaadhoning is nog beschikbaar. Er gaat ook géén bloemenhoning in juni geslingerd worden, tijdens de bloei van de acacia is het te slecht weer geweest. De zomerhoning is voor midden augustus. Bijenwas is eveneens uitverkocht, terug een 2-tal kg beschikbaar tegen september 2026. Vijf gram ruwe propolis is er nog. <br> 
-                                        Update: 14 juni 2026<br /><br />
-                                        <p><a href="#logo"> naar boven</a></p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="6u">
-								<section>
-									<ul class="style">
-										<li><a href="images/imkers in koolzaadveld groot.jpg" data-lightbox="imkers" data-title="koolzaadveld"><img src="images/thumbnail koolzaadveld (2).jpg" alt="koolzaadveld" name="thumbs" width="102" height="102" id="thumbs"></a>
-											<h3>Help bijen, hommels en vlinders.</h3>
-											<span>De bijen, hommels en vlinders hebben het moeilijk. Naast druk door parasieten en pesticides is het sterk beperkt en verschraald aanbod van stuifmeel en nectar een oorzaak. Help door een groter en diverser aanbod van bloemen en bloeiende bomen te planten. Op verscheidene <a href="http://users.telenet.be/imkerbondzoersel/bijenplanten.html" target="_blank">websites</a> kan u planten selecteren met hoge <a href="http://www.imkerpedia.nl/wiki/index.php/Nectar" target="_blank">nectar </a>of <a href="https://nl.wikipedia.org/wiki/Stuifmeel" target="_blank">stuifmeel</a> aanbod.</span> Iedereen kan van zijn tuin een restaurant maken, niet enkel de honingbij maar ook de wilde bijen, alle soorten hommels en vlinders gaan er gelukkig mee zijn. Elk beetje helpt. Laat dus die klaver staan in je gazon of beter maak er een bloemenweide van ! Puur genieten ! <br />
-											<br />
-                                           <br /><br /> 
-                                              <br /><br /> 
-                                                <a href="images/bijenbaard groot.JPG" data-lightbox="bijenbaard" data-title="bijenbaard"><img src="images/bijenbaard.jpg" alt="bijenbaard" name="thumbs" width="102" height="102" id="thumbs"></a>
-											
-											<h3>Andere diensten: drachtlocatie, zwermen,...</h3>
-									  <span>Wenst u een bijenkast in uw buurt, heeft u een drachtgebied, een bijenzwerm gezien,... of wil je gewoon even onze bijen bezoeken. Neem dan aub contact met ons op. <br /><br /> 
-                                      Of de honing in een andere verpakking (potjes van 250, 125, 50 gr of 30 gr, ...),...  contacteer ons (noot: enkel mogelijk voor de honing wordt geslingerd, dus tijdig contacteren).                   
-                                                      
-                                      
-                                       <br /><br /> 
-                                      </span> </li>
-									</ul>
-								</section>
-							</div>
-
-					</div>
-				</section>
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-
-					<!-- Lists -->
-						<div class="row">
-							<div class="8u">
-								<section>
-									<header class="major">
-										<h2>Openingsuren bij verkoop thuis: </h2>
-										<p class="byline">Die hebben we helaas niet. <br />
-                                        <p class="byline">
-                                      Met pensioen dus meestal wel thuis of juist niet thuis. U mag altijd aanbellen.</p>
-										<p class="byline"> Maar best: stuur eerst een SMS of telefoontje op 0475 57 80 63</p>
-                                        <p class="byline"> of een mailtje naar:  voornaam.familienaam@telenet.be (daniel.boons). Dan spreken we een moment af. </p>
-                                    </header>
-									<div class="row">
-										<section class="6u">
-										<ul class="contact">
-										<li>
-											<span class="address">Adres</span>
-										<span>Veerstraat 150 </span></li>
-										<li><span class="address">   </span> <span> 2240  Viersel - Zandhoven
-									    </span>
-									  </li>										
-									  <li>
-										<span class="phone">GSM </span>0475 57 80 63</li>
-									</ul>		
-										<iframe scrolling="no" width="334" height ="175" frameborder="0" marginwidth="0" marginheight="0" src="http://www.meteo.be/services/widget/.?postcode=2240&nbDay=2&type=4&lang=nl&bgImageId=0&bgColor=567cd2&scrolChoice=0&colorTempMax=e91a68&colorTempMin=4020e9"></iframe>										
-									  </section>
-									</div>
-								</section>
-							</div>
-							<div class="4u">
-								<section>
-									<header class="major">
-										<h2><a id="contact"></a>Waar te bereiken</h2>
-										<span class="byline">Google maps</span><p>&nbsp;<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.8924263568406!2d4.642334200000005!3d51.1842056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3fe13ce18a8cb%3A0x6dca0074f8db138!2sVeerstraat+150%2C+2240+Zandhoven!5e0!3m2!1snl!2sbe!4v1442937208577" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
-									</header>
-									
-								</section>
-							</div>
-							
-						</div>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							Design: <a href="http://templated.co">TEMPLATED</a> ...    Website & Images: D.Boons & H.Wuyts
-						</div>
-
-				</div>
-			</div>
-        <script type="text/javascript" src="lightbox2-master/dist/js/lightbox.js"></script>
-           </body>
-</html>
+</body></html>
